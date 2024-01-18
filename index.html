@@ -10,14 +10,14 @@
     <div id="container">
         <header>
             <img id="logo" src="website_images/LD_logo.svg" alt="LEGOdudes nettbutikk">
-            <button>
-                <span>66</span>
+            <button id="carttoggle">
+                <span id="cartcount">66</span>
                 <img id="cart-icon" src="website_images/legocart.svg" alt="Din handlevogn">
             </button>
-            <section id="cart">
+            <section id="cart" class="">
                 <h2>Din handlevogn</h2>
                 <!-- <p>Din andlevogn er tom.</p> -->
-                <ul>
+                <ul id="cartlist">
                     <li>
                         <span class="title">Dragon</span>
                         <span class="price">89,-</span>
@@ -33,6 +33,10 @@
                         <span class="functions">
                             <button>X</button>
                         </span>
+                    </li>
+                    <li>
+                        <span class="price">0</span>
+                        <span class="quantity">0</span>
                     </li>
                 </ul>
             </section>

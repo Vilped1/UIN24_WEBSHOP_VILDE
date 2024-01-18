@@ -85,8 +85,16 @@ header button span {
     border-bottom: 0.5rem solid var(--green);
     position: absolute;
     top: 87px;
-    right: 0;
+    right: 0px;
     padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+#cart.show {
+    visibility: visible;
+    opacity: 1;
 }
 
 #cart h2 {
@@ -138,6 +146,10 @@ header button span {
 .functions {
     width: 2rem;
     text-align: right;
+}
+
+#cart ul li#total {
+    border-bottom: none;
 }
 
 nav {
